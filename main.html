@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atinei Header</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C600%2C700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C700" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <style>
+        .atinei-btn {
+            cursor: pointer;
+            border: none;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.2125;
+            color: #7e7e7e;
+            font-family: Inter, 'Source Sans Pro';
+            white-space: nowrap;
+            flex-shrink: 0;
+            background-color: transparent;
+        }
+
+        .atinei-btn:hover {
+            color: #7926aa;
+        }
+
+        .event-title {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2125;
+            color: #7926aa;
+            font-family: 'Inter', 'Source Sans Pro', sans-serif;
+        }
+
+        .event-title-grey {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2125;
+            color: #7e7e7e;
+            font-family: 'Inter', 'Source Sans Pro', sans-serif;
+        }
+
+        .second-gray {
+            background-color: #f1f1f1;
+            color: #7e7e7e;
+        }
+
+        .floating-image-container {
+            position: relative;
+        }
+
+        .floating-image {
+            position: absolute;
+            /* Defina top e left para ajustar a posição da imagem. Exemplo: */
+            top: 150px;
+            /* Ajuste conforme necessário */
+            left: 50%;
+            /* Ajuste conforme necessário */
+            transform: translate(-50%, -50%);
+        }
+
+        .custom-button {
+            width: 21.8rem;
+            height: 3.1rem;
+            overflow: hidden;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #ffffff;
+            font-family: 'Inter', 'Source Sans Pro', sans-serif;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #15a0a0;
+            border-radius: 10rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .custom-button-form {
+            width: 15.8rem;
+            height: 2.1rem;
+            overflow: hidden;
+            text-align: center;
+            margin: 0 .5rem;
+            font-size: .8rem;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #ffffff;
+            font-family: 'Inter', 'Source Sans Pro', sans-serif;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #12c9a6;
+            border-radius: 10rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .custom-paragraph {
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #e3eae9;
+            font-family: 'Inter', 'Source Sans Pro', sans-serif;
+            margin-top: 10px;
+            /* Ajuste conforme necessário */
+        }
+
+        .meu-cas {
+            background-image: url('./assets/rectangle-10-a9H.png');
+            /* Substitua pelo caminho da sua imagem */
+            background-size: cover;
+            /* Centraliza horizontalmente e move para o topo */
+            background-position: center center;
+
+            /* Faz com que a imagem cubra todo o fundo */
+
+            color: white;
+            /* Define a cor do texto como branco */
+            text-align: center;
+            /* Centraliza o texto */
+            font-size: 20px;
+            /* Define o tamanho do texto como 20px */
+        }
+
+        .legend-icons {
+            margin-top: 1.5rem;
+            color: #12C9A6;
+            text-align: center;
+            font-family: Inter;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120.833%;
+            /* 29px */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" style="background-color: #e3eae9;">
+        <div class="container-fluid" style="margin-left: 2.1rem;">
+            <div class="d-flex flex-row justify-content-between w-100 p-4 mx-5">
+                <img src="./assets/camada-1-CeX.png" alt="Logo" class="mx-5 mt-2"
+                    style="width: 19rem;object-fit: contain; vertical-align: top; flex-shrink: 0;">
+
+                <div class="d-flex mx-5">
+                    <button class="btn atinei-btn m-2" id="btn1">Sobre o Atinei</button>
+                    <button class="btn atinei-btn m-2" id="btn2">Para clientes</button>
+                    <button class="btn atinei-btn m-2" id="btn3">Para fornecedores</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content-1 p-0 hidden-style" id="frame-1">
+        <div class="row py-5" style="height: 25rem;">
+            <div class="col p-5">
+                <h1 class="event-title">Seu parceiro perfeito para<br> eventos inesquecíveis!</h1>
+            </div>
+        </div>
+        <div class="row py-5 second-gray d-flex flex-row" style="height: 23rem; position: relative;">
+            <div class="col-md-6 floating-image-container">
+                <img src="./assets/sem-ttulo-1-1.png" alt="Imagem Flutuante" class="floating-image" width="450px">
+            </div>
+            <div class="col-md-6">
+                <h2 class="event-title-grey" style="text-align: start;">Descubra os melhores prestadores de serviços
+                    para tornar o seu evento
+                    memorável!
+                </h2>
+            </div>
+        </div>
+        <div class="row py-5 d-flex flex-row" style="height: 37rem;background-color: #501b75;">
+            <div class="col-md-6" style="padding-left: 15rem;">
+                <h1 class="event-title mt-5" style="color: #12c9a6;font-size: 6rem;text-align: start;">Por
+                    que escolher o Atinei?
+                </h1>
+            </div>
+            <div class="col-md-6">
+                <button class="custom-button"
+                    style="margin-top: -5rem;margin-left:-7rem;position:relative;z-index: 10;background-color:#12C9A6">Começe
+                    agora</button>
+                <div class="custom-button-container" style="margin-top: 5rem;padding-right: 6rem;">
+                    <p class="custom-paragraph">
+                        <b>Para clientes:</b> Atinei é a plataforma que simplifica a organização de eventos, conectando
+                        você aos melhores prestadores de serviços.
+                    </p>
+                    <button class="custom-button my-4">Encontre um fornecedor</button>
+
+                    <p class="custom-paragraph my-4">
+                        <b>Para fornecedores:</b> Conecte-se diretamente com um público interessado nos serviços
+                        exclusivos que você oferece. Nossa plataforma é o trampolim ideal para ampliar sua presença e
+                        cativar novos clientes.
+                    </p>
+                    <button class="custom-button my-4">Seja um fornecedor</button>
+                </div>
+            </div>
+        </div>
+        <div class="row py-5" style="height: 33rem;background-color: #12C9A6;">
+            <div class="col p-5" style="margin: 0 1rem;">
+                <h1 class="event-title" style="color: #f1f1f1;">Pronto para transformar seu evento<br> em algo
+                    extraordinário?</h1>
+                <p class="custom-paragraph text-center my-5" style="color: #7926aa;">Atinei é a sua ferramenta
+                    indispensável
+                    para realização de
+                    eventos! Reúne
+                    fornecedores qualificados em um<br> só lugar, tornando a organização de festas mais fácil. Com o
+                    app,
+                    você acessa profissionais confiáveis, agiliza<br> escolhas e garante que cada detalhe do seu evento
+                    seja
+                    memorável.<br>
+                    <b>Descubra a praticidade de celebrar com Atinei!</b>
+                </p>
+
+            </div>
+        </div>
+        <div class="row py-5 d-flex flex-row" style="height: 37rem;background-color: #E3EBE9;">
+            <button class="custom-button"
+                style="margin-top: -4.5rem;margin-left:32rem;position:relative;z-index: 10;background-color:#7926aa">Saiba
+                mais sobre</button>
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="padding-left: 15rem;">
+                <h1 class="event-title" style="color: #15a0a0;font-size: 4rem;text-align: start;">Dúvidas ou
+                    precisa de ajuda?
+                </h1>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                    </div>
+                    <div class=" mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Assunto"
+                            rows="10"></textarea>
+                    </div>
+                    <div class="p-0 m-0 d-flex flex-row justify-content-end">
+                        <button type="reset" class="custom-button-form me-2" style="background-color: #7e7e7e;">Limpar
+                            campos</button>
+                        <button type="submit" class="custom-button-form">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid content-1 p-0" id="frame-2">
+        <div class="row py-5" style="height: 20rem;">
+            <div class="col p-5">
+                <h1 class="event-title">Transforme seu evento em um momento inesquecível!</h1>
+            </div>
+        </div>
+        <div class="row py-5 meu-cas" style="height: 27rem;">
+            <div class="col p-5 d-flex justify-content-center align-items-center">
+                <h1 style="width: 60rem;font-size: 3.5rem;">Organize seu evento dos sonhos com os melhores fornecedores!
+                </h1>
+            </div>
+        </div>
+        <div class="row py-5 d-flex flex-row" style="height: 37rem;background-color: #501b75;">
+            <div class="col-md-6" style="padding-left: 15rem;">
+                <h1 class="event-title mt-5 me-2" style="color: #12c9a6;font-size: 6rem;text-align: start;">Como
+                    funciona?
+                </h1>
+            </div>
+            <div class="col-md-6">
+                <button class="custom-button"
+                    style="margin-top: -5rem;margin-left:-7rem;position:relative;z-index: 10;background-color:#12C9A6">Começe
+                    agora</button>
+                <div class="custom-button-container" style="margin-top: 2rem; margin-left: 3rem;padding-right: 6rem;">
+                    <p class="custom-paragraph" style="margin-top: 0;font-size: 1.1rem;">
+                        <b>Acesse nossa página: </b>(www.atinei.com.br) ou baixe o app no App Store ou Google Play.
+                    </p>
+                    <p class="custom-paragraph" style="margin-top: 0;font-size: 1.1rem;">
+                        <b>Pesquise o Serviço Desejado: </b>Use a barra de pesquisa para encontrar fornecedores de
+                        acordo com o serviço desejado (ex: decoração, catering, música).
+                    </p>
+                    <p class="custom-paragraph" style="margin-top: 0;font-size: 1.1rem;">
+                        <b>Explore Opções: </b>Navegue pelas opções de fornecedores e explore seus perfis para entender
+                        seus serviços, avaliações e portfólio.
+                    </p>
+                    <p class="custom-paragraph" style="margin-top: 0;font-size: 1.1rem;">
+                        <b>Filtre por Preferências: </b>Refine sua pesquisa usando filtros como localização e avaliações
+                        para encontrar o fornecedor que atenda às suas preferências.
+                    </p>
+                    <p class="custom-paragraph" style="margin-top: 0;font-size: 1.1rem;">
+                        <b>Entre em Contato: </b>Utilize nosso sistema de mensagens para entrar em contato diretamente
+                        com os fornecedores escolhidos, tirar dúvidas e solicitar orçamentos.
+                    <p class="custom-paragraph" style="margin-top: 0;font-size: 1.1rem;">
+                        <b>Avalie sua Experiência: a</b>Ao concluir o evento, compartilhe sua experiência avaliando o
+                        fornecedor. Sua opinião é valiosa para nossa comunidade.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row py-5 d-flex flex-row" style="height: 37rem;background-color: #12C9A6;">
+            <div class="col-md-6" style="padding-left: 15rem;">
+                <h1 class="event-title mt-5" style="color: #7E7E7E;font-size: 6rem;text-align: start;">Por que usar o
+                    Atinei?
+                </h1>
+            </div>
+            <div class="col-md-6">
+                <div class="custom-button-container" style="margin-top: 5rem;padding-right: 6rem;">
+                    <p class="custom-paragraph" style="color:#501B75">
+                        Facilidade proporcionada pelo app, centralizando bons fornecedores de diversos segmentos em uma
+                        única plataforma.
+                    </p>
+                    <p class="custom-paragraph" style="color:#501B75">
+                        Segurança na seleção dos fornecedores (Equipe do app realizará consulta do CNPJ nas esferas
+                        municipal, estadual e federal. Somente fornecedores idôneos serão aceitos). </p>
+                    <p class="custom-paragraph" style="color:#501B75">
+                        Gratuito.</p>
+                    <p class="custom-paragraph" style="color:#501B75">
+                        Personalize sua lista de fornecedores, favoritando os mais adequados ao seu perfil.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row py-5 d-flex flex-row" style="height: 27rem;background-color: #7926AA;">
+            <div class="col-md-12 d-flex justify-content-center" style="height: 1rem;margin-bottom: 9.5rem;">
+                <h1 class="event-title" style="color: #f1f1f1;font-size: 3rem;text-align: center;width: 55.5rem;">
+                    Faça do seu evento um sucesso, comece agora!
+                </h1>
+            </div>
+            <div class="col-md-12 d-flex justify-content-around" style="width: 70rem;margin:0 auto;">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/prato.png" alt="" width="120rem">
+                    <p class="legend-icons">Buffet</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/casa.png" alt="" width="120rem">
+                    <p class="legend-icons">Locais</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/noivos.png" alt="" width="120rem">
+                    <p class="legend-icons">Casamentos</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/banda.png" alt="" width="120rem" height="120rem">
+                    <p class="legend-icons">Shows</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/bolo.png" alt="" width="120rem">
+                    <p class="legend-icons">Aniversários</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row py-5 d-flex flex-row" style="height: 37rem;background-color: #E3EBE9;">
+            <button class="custom-button"
+                style="margin-top: -4.5rem;margin-left:32rem;position:relative;z-index: 10;background-color:#12C9A6">Saiba
+                mais sobre</button>
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="padding-left: 15rem;">
+                <h1 class="event-title" style="color: #15a0a0;font-size: 4rem;text-align: start;">Dúvidas ou
+                    precisa de ajuda?
+                </h1>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                    </div>
+                    <div class=" mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Assunto"
+                            rows="10"></textarea>
+                    </div>
+                    <div class="p-0 m-0 d-flex flex-row justify-content-end">
+                        <button type="reset" class="custom-button-form me-2" style="background-color: #7e7e7e;">Limpar
+                            campos</button>
+                        <button type="submit" class="custom-button-form">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid content-1 p-0" id="frame-3">
+        <div class="row py-5" style="height: 25rem;background-color: #f7f7f7;">
+            <p class="text-center"><img src="./assets/TRAB.png" alt="" width="200rem"></p>
+
+            <h1 class="event-title">PÁGINA EM CONSTRUÇÃO...</h1>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center align-items-center" style="height: 10rem;background-color: #12C9A6;">
+        <p style="color: #7926aa;font-size:.8rem;text-align: center;width: 15rem;height: 1rem;font-weight: 700;">
+            Atinei LTDA ::
+            49.689.764/0001-25
+        </p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Função para alternar a visibilidade das divs
+            function toggleDivs(buttonId) {
+                const frames = document.querySelectorAll('.content-1');
+                frames.forEach(frame => frame.classList.add('hidden-style'));
+
+                const targetFrame = document.querySelector(`#frame-${buttonId[buttonId.length - 1]}`);
+                targetFrame.classList.remove('hidden-style');
+            }
+
+            // Adiciona evento de clique aos botões
+            document.querySelector('#btn1').addEventListener('click', () => toggleDivs('btn1'));
+            document.querySelector('#btn2').addEventListener('click', () => toggleDivs('btn2'));
+            document.querySelector('#btn3').addEventListener('click', () => toggleDivs('btn3'));
+        });
+        // JavaScript para alternar as cores dos botões
+        document.querySelectorAll('.atinei-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                document.querySelectorAll('.atinei-btn').forEach(btn => btn.style.color = '#7e7e7e');
+                this.style.color = '#7926aa';
+            });
+        });
+    </script>
+
+</body>
+
+</html>
