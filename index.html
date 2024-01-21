@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C600%2C700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C700" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <aside class="menu">
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1><img id="logo" src="assets/img/logo.png" alt="Atinei" width="300rem"></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#intro">Sobre o Atinei</a></li>
+                    <li class="nav-item"><a href="#clientes">Para clientes</a></li>
+                    <li class="nav-item"><a href="#fornecedores">Para fornecedores</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white.svg"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#intro">Sobre o Atinei</a></li>
+                <li class="nav-item"><a href="#clientes">Para clientes</a></li>
+                <li class="nav-item"><a href="#fornecedores">Para fornecedores</a></li>
+            </ul>
+        </div>
+    </aside>
+    <section id="intro">
+        <div class="container-fluid content-1 p-0 " id="frame-1">
+            <div id="main-title-f" class="row py-5">
+                <div class="col p-5">
+                    <h1 class="event-title">Seu parceiro perfeito para eventos inesquecíveis!</h1>
+                </div>
+            </div>
+            <div id="main-modelo" class="row second-gray d-flex flex-row" style="height: 100%; position: relative;">
+                <div class="col-md-5 floating-image-container d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/modelo1.png" alt="Imagem Flutuante" class="floating-image">
+                </div>
+                <div id="ext-model" class="col-md-7 d-flex flex-column">
+                    <div id="int-model" class="d-flex justify-content-start align-items-center" style="height: 85%;">
+                        <h2 class="event-title-grey">Descubra os melhores prestadores de
+                            serviços
+                            para tornar o seu evento
+                            memorável!
+                        </h2>
+                    </div>
+                    <div id="frame-1-button" class="w-100">
+                        <button class="custom-button" style="background-color:#12C9A6">Começe agora</button>
+                    </div>
+                </div>
+            </div>
+            <div id="ext-1-esc" class="row py-5 d-flex flex-row" style="height: 100%;background-color: #501b75;">
+                <div id="int-1-esc" class="col-md-6">
+                    <h1 class="event-title mt-5">Por
+                        que escolher o Atinei?
+                    </h1>
+                </div>
+                <div id="int-2-esc" class="col-md-6">
+                    <div class="custom-button-container" id="int-2-esc-child">
+                        <p class="custom-paragraph">
+                            <b>Para clientes:</b> Atinei é a plataforma que simplifica a organização de eventos,
+                            conectando
+                            você aos melhores prestadores de serviços.
+                        </p>
+                        <button class="custom-button my-4">Encontre um fornecedor</button>
+
+                        <p class="custom-paragraph my-4">
+                            <b>Para fornecedores:</b> Conecte-se diretamente com um público interessado nos serviços
+                            exclusivos que você oferece. Nossa plataforma é o trampolim ideal para ampliar sua presença
+                            e
+                            cativar novos clientes.
+                        </p>
+                        <button class="custom-button my-4">Seja um fornecedor</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5" style="height: 100%;background-color: #12C9A6;">
+                <div class="col p-5" style="margin: 0 1rem;">
+                    <h1 class="event-title" style="color: #f1f1f1;">Pronto para transformar seu evento em algo
+                        extraordinário?</h1>
+                    <p class="custom-paragraph text-center my-5" style="color: #7926aa;">Atinei é a sua ferramenta
+                        indispensável
+                        para realização de
+                        eventos! Reúne
+                        fornecedores qualificados em um<br> só lugar, tornando a organização de festas mais fácil. Com o
+                        app,
+                        você acessa profissionais confiáveis, agiliza<br> escolhas e garante que cada detalhe do seu
+                        evento
+                        seja
+                        memorável.<br>
+                        <b>Descubra a praticidade de celebrar com Atinei!</b>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clientes">
+        <div class="container-fluid content-1 p-0" id="frame-2">
+            <div class="row p-5" style="height: 35rem;">
+                <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                    <h1 class="event-title w-75">Transforme seu evento em um momento inesquecível!</h1>
+                </div>
+            </div>
+            <div class="row meu-cas" style="height: 100%!important;position:relative;">
+                <div class="d-flex flex-column justify-content-center align-items-center"
+                    style="height: 100%!important;">
+                    <div class="d-flex justify-content-center" style="height: 100%!important;">
+                        <h1 id="h1-sonhos">Organize seu evento dos sonhos com os melhores fornecedores!
+                        </h1>
+                    </div>
+                    <div>
+                        <button class="custom-button"
+                            style="background-color:#12C9A6;position: absolute;bottom:0;left: 0;right: 0;margin: auto;">Começe
+                            agora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5 d-flex flex-row" style="height: 100%;background-color: #7926AA;">
+                <div id="int-func" class="col-md-6">
+                    <h1 class="event-title mt-5 h1-funciona">Como funciona?</h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="custom-button-container"
+                        style="margin-top: 2rem; margin-left: 3rem;padding-right: 6rem;">
+                        <p class="custom-paragraph" style="margin-top: 0;font-size: 1.9rem;">
+                            <b>Acesse nossa página: </b>(www.atinei.com.br) ou baixe o app no App Store ou Google Play.
+                        </p>
+                        <p class="custom-paragraph" style="margin-top: 0;font-size: 1.9rem;">
+                            <b>Pesquise o Serviço Desejado: </b>Use a barra de pesquisa para encontrar fornecedores de
+                            acordo com o serviço desejado (ex: decoração, catering, música).
+                        </p>
+                        <p class="custom-paragraph" style="margin-top: 0;font-size: 1.9rem;">
+                            <b>Explore Opções: </b>Navegue pelas opções de fornecedores e explore seus perfis para
+                            entender
+                            seus serviços, avaliações e portfólio.
+                        </p>
+                        <p class="custom-paragraph" style="margin-top: 0;font-size: 1.9rem;">
+                            <b>Filtre por Preferências: </b>Refine sua pesquisa usando filtros como localização e
+                            avaliações
+                            para encontrar o fornecedor que atenda às suas preferências.
+                        </p>
+                        <p class="custom-paragraph" style="margin-top: 0;font-size: 1.9rem;">
+                            <b>Entre em Contato: </b>Utilize nosso sistema de mensagens para entrar em contato
+                            diretamente
+                            com os fornecedores escolhidos, tirar dúvidas e solicitar orçamentos.
+                        <p class="custom-paragraph" style="margin-top: 0;font-size: 1.9rem;">
+                            <b>Avalie sua Experiência: </b>Ao concluir o evento, compartilhe sua experiência avaliando
+                            o
+                            fornecedor. Sua opinião é valiosa para nossa comunidade.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div id="ext-perg" class="row py-5 d-flex flex-row">
+                <div id="int-1-perg" class="col-md-6 d-flex justify-content-end align-items-center">
+                    <h1 class="event-title mt-5">Por que usar
+                        o
+                        Atinei?
+                    </h1>
+                </div>
+                <div id="int-2-perg" class="col-md-6">
+                    <div class="custom-button-container">
+                        <p class="custom-paragraph" style="color:#501B75; margin-top: 0;font-size: 1.9rem;">
+                            Facilidade proporcionada pelo app, centralizando bons fornecedores de diversos segmentos em
+                            uma única plataforma.
+                        </p>
+                        <p class="custom-paragraph" style="color:#501B75; margin-top: 0;font-size: 1.9rem;">
+                            Segurança na seleção dos fornecedores (Equipe do app realizará consulta do CNPJ nas esferas
+                            municipal, estadual e federal. Somente fornecedores idôneos serão aceitos).
+                        </p>
+                        <p class="custom-paragraph" style="color:#501B75; margin-top: 0;font-size: 1.9rem;">
+                            Gratuito.
+                        </p>
+                        <p class="custom-paragraph" style="color:#501B75; margin-top: 0;font-size: 1.9rem;">
+                            Personalize sua lista de fornecedores, favoritando os mais adequados ao seu perfil.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5 d-flex flex-row" style="background-color: #7926AA;">
+                <div id="make-ext-1" class="d-flex justify-content-center">
+                    <h1 id="make-int-1" class="event-title">
+                        Faça do seu evento um sucesso, comece agora!
+                    </h1>
+                </div>
+                <div class="d-flex justify-content-around" id="frame-3" style="width: 80%;margin:0 auto;">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="./assets/img/prato.png" alt="" width="120rem">
+                        <p class="legend-icons">Buffet</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="./assets/img/casa.png" alt="" width="120rem">
+                        <p class="legend-icons">Locais</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="./assets/img/noivos.png" alt="" width="120rem">
+                        <p class="legend-icons">Casamentos</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="./assets/img/banda.png" alt="" width="120rem" height="120rem">
+                        <p class="legend-icons">Shows</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="./assets/img/bolo.png" alt="" width="120rem">
+                        <p class="legend-icons">Aniversários</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fornecedores">
+        <div class="container-fluid content-1 p-0" id="frame-3">
+            <div class="row p-5" style="height: 35rem;">
+                <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                    <h1 id="text-amplie" class="event-title">Faça parte da experiência Atinei e amplie sua lista de
+                        clientes.</h1>
+                </div>
+            </div>
+            <div class="row my-party" style="height: 100%!important;position:relative;">
+                <div class="d-flex flex-column justify-content-center align-items-center"
+                    style="height: 100%!important;">
+                    <div class="d-flex justify-content-center" style="height: 100%!important;">
+                        <h1 id="dj-image">
+                            Cadastre-se e seja a
+                            escolha preferida dos clientes!
+                            Junte-se à Atinei e seja a escolha preferida dos clientes!
+                        </h1>
+                    </div>
+                    <div>
+                        <button class="custom-button"
+                            style="background-color:#15A0A0;position: absolute;bottom:0;left: 0;right: 0;margin: auto;">Começe
+                            agora</button>
+                    </div>
+                </div>
+            </div>
+            <div id="ext-funciona-2" class="row py-5 d-flex flex-row">
+                <div id="int-funciona-2" class="col-md-6 d-flex justify-content-end align-items-center">
+                    <h1 id="h1-funciona-2" class="event-title mt-5">Como
+                        funciona?
+                    </h1>
+                </div>
+                <div class="col-md-6">
+                    <div id="cont-sec-par" class="custom-button-container">
+                        <p class="custom-paragraph-second">
+                            <b>Registre-se no Atinei: </b>Cadastre-se como prestador de serviços no site da Atinei,
+                            preenchendo as informações necessárias. (Requer aprovação de cadastro)
+                        </p>
+                        <p class="custom-paragraph-second">
+                            <b>Crie seu Perfil:</b>Complete seu perfil com informações detalhadas sobre seus serviços,
+                            incluindo fotos, preços e depoimentos de clientes anteriores.
+                        </p>
+                        <p class="custom-paragraph-second">
+                            <b>Destaque suas especialidades:</b>Selecione as categorias específicas em que você atua
+                            para atrair clientes que buscam seus talentos.
+                        </p>
+
+                        <p class="custom-paragraph-second">
+                            <b>Receba solicitações: </b>Fique atento às solicitações de clientes e responda prontamente.
+                            Use nosso sistema de mensagens para esclarecer dúvidas e discutir detalhes.
+                        </p>
+
+                        <p class="custom-paragraph-second" style="margin-top: 0;font-size: 1.9rem;">
+                            <b>Obtenha avaliações positivas:</b>Ao entregar seus serviços, incentive os clientes a
+                            deixarem avaliações. Avaliações positivas aumentam sua visibilidade na plataforma.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5 d-flex flex-row" style="height: 100%;background-color: #7926AA;">
+                <div id="int-vant" class="col-md-12 d-flex justify-content-center">
+                    <h1 class="event-title">
+                        Vantagens para Prestadores
+                    </h1>
+                </div>
+                <div class="col-md-12 d-flex justify-content-around" style="width: 70rem;margin:0 auto;">
+                    <div class="d-flex flex-column justify-content-center align-items-center bottom-sm">
+                        <img src="./assets/img/eye.svg" alt="" width="120rem">
+                        <p class="legend-icons-secondary">Visibilidade</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center bottom-sm">
+                        <img src="./assets/img/check.svg" alt="" width="120rem">
+                        <p class="legend-icons-secondary">Checklist</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center bottom-sm">
+                        <img src="./assets/img/pasta.svg" alt="" width="120rem">
+                        <p class="legend-icons-secondary">Organização</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center bottom-sm">
+                        <img src="./assets/img/cliente.svg" alt="" width="120rem" height="120rem">
+                        <p class="legend-icons-secondary">Lista de Clientes</p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="ext-plan" class="row py-5">
+                <div id="int-plan" class="col-md-12 d-flex justify-content-center">
+                    <h1 class="event-title">
+                        Confira os Planos
+                    </h1>
+                </div>
+                <div id="axis-main" class="col-md-12">
+                    <div class="col-md-6 div-externa mt-2 d-flex flex-column">
+                        <div class="div-interna">
+                            <h1>Básico</h1>
+                            <p>Divulgação dos dados básicos da empresa (Nome, endereço, telefone, email)</p>
+                            <p>Upload de fotos dos serviços realizados (limitação de 5 fotos)</p>
+                            <p>Botão avaliação dos clientes</p>
+                        </div>
+                        <div class="precos">
+                            <h1 class="preco-premium-basico">R$ 150,00</h1>
+                            <p class="span-por-mes">por mês</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 div-externa mt-2 d-flex flex-column">
+                        <div class="div-interna">
+                            <h1>Premium</h1>
+                            <p>Divulgação dos dados básicos da empresa
+                                (Nome, endereço, telefone, email)</p>
+                            <p>Upload de fotos dos serviços
+                                realizados (limitação de 5 fotos)</p>
+                            <p>Botão avaliação dos clientes</p>
+                            <p>Contato direto com o cliente</p>
+                        </div>
+                        <div class="precos">
+                            <h1 class="preco-premium-basico">R$ 300,00</h1>
+                            <p class="span-por-mes">por mês</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row py-2 d-flex flex-row align-items-center justify-content-center"
+            style="height: 100%; background: linear-gradient(to bottom, #E3EBE9 50%,  #15A0A0 50%);">
+            <button class="custom-button" style="background-color:#12C9A6">Saiba
+                mais sobre</button>
+        </div>
+        <div class="row py-5 d-flex flex-row align-items-center" style="height: 100%;background-color: #15A0A0;">
+            <div class="col-md-6 text-lg-start text-center d-flex justify-content-end align-items-center">
+                <h1 id="title-form" class="event-title">
+                    Dúvidas ou precisa de
+                    ajuda?</h1>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-lg field-form" id="exampleFormControlInput1"
+                            placeholder="Nome">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control form-control-lg field-form" id="
+                        exampleFormControlInput1" placeholder="Email">
+                    </div>
+                    <div class=" mb-3">
+                        <textarea class="form-control form-control-lg field-form" id=" exampleFormControlTextarea1"
+                            placeholder="Assunto" rows="10"></textarea>
+                    </div>
+                    <div class="p-0 m-0 d-flex flex-row justify-content-end">
+                        <button type="reset" class="custom-button-form me-2" style="background-color: #7e7e7e;">Limpar
+                            campos</button>
+                        <button type="submit" class="custom-button-form">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+        <div class="row py-5" style="height: 100%;background-color: #12C9A6;">
+            <div class="col p-5" style="margin: 0 1rem;">
+                <p class="custom-paragraph text-center my-5" style="color: #7926aa;font-size: 1.5rem;">
+                    <b>Atinei LTDA :: 49.689.764/0001-25</b>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <a class="back-to-top" href="#"><img src="assets/img/arrow.svg" alt="arr"></a>
+
+    <!-- Scripts do prórpio site e do bootstrap-->
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
