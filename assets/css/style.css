@@ -527,6 +527,45 @@ form {
   .img-logo{
       width: 20rem;
     }
+    /* Estilo Geral dos Alertas */
+.alert {
+    margin: 2rem;
+    background-color: #f44336; /* Vermelho */
+    color: white;
+    margin-bottom: 1.5rem;
+    display: none; /* Esconde por padrão */
+    border-radius: 5px;
+}
+
+/* Estilo do botão de fechar */
+.closebtn {
+    margin-left: 1rem;
+    color: #0f2c11;
+    font-weight: bold;
+    float: right;
+    font-size: 2rem;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Quando passa o mouse no botão de fechar */
+.closebtn:hover {
+    color: black;
+}
+
+/* Estilo específico para alerta de sucesso */
+.success {
+    background-color: #87ff8b; /* Verde */
+    color: #0f2c11;
+}
+
+/* Estilo específico para alerta de erro */
+.error {
+    background-color: #ff8d85; /* Vermelho */
+    color: #8d0000;
+}
+
 
 
 @media (max-width: 1022px) {
@@ -754,6 +793,42 @@ form {
         margin-left: 2rem;
         padding-right: 2rem;
     }
-    
+    .alert {
+        margin: 2rem;
+        color: white;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+        display: none; /* Esconde por padrão */
+        border-radius: 5px;
+        font-size: 1.5rem;
+    }
+    /* Estilo do botão de fechar */
+.closebtn {
+    margin-left: 1rem;
+    color: #0f2c11;
+    font-weight: bold;
+    float: right;
+    font-size: 2.2rem;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Quando passa o mouse no botão de fechar */
+.closebtn:hover {
+    color: black;
+}
+
+/* Estilo específico para alerta de sucesso */
+.success {
+    background-color: #87ff8b; /* Verde */
+    color: #0f2c11;
+}
+
+/* Estilo específico para alerta de erro */
+.error {
+    background-color: #ff8d85; /* Vermelho */
+    color: #8d0000;
+}
 
 }

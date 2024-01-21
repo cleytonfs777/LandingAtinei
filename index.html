@@ -395,17 +395,27 @@
                     ajuda?</h1>
             </div>
             <div class="col-md-6">
+                <div id="success-alert" class="alert success">
+                    <span class="closebtn" onclick="closeAlert('success-alert')">&times;</span>
+                    <strong>Sucesso!</strong> Seu formulário foi enviado.
+                </div>
+
+                <!-- Alerta de Erro -->
+                <div id="error-alert" class="alert error">
+                    <span class="closebtn" onclick="closeAlert('error-alert')">&times;</span>
+                    <strong>Erro!</strong> Algo deu errado ao enviar seu formulário.
+                </div>
                 <form>
                     <div class="mb-3">
-                        <input type="text" class="form-control form-control-lg field-form" id="exampleFormControlInput1"
+                        <input type="text" name="nome" class="form-control form-control-lg field-form" id="nome"
                             placeholder="Nome">
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control form-control-lg field-form" id="
-                        exampleFormControlInput1" placeholder="Email">
+                        <input type="email" name="email" class="form-control form-control-lg field-form" id="email"
+                            placeholder="Email">
                     </div>
                     <div class=" mb-3">
-                        <textarea class="form-control form-control-lg field-form" id=" exampleFormControlTextarea1"
+                        <textarea class="form-control form-control-lg field-form" name="assunto" id="assunto"
                             placeholder="Assunto" rows="10"></textarea>
                     </div>
                     <div class="p-0 m-0 d-flex flex-row justify-content-end">
